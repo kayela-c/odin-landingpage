@@ -190,7 +190,7 @@ p {
 /* Nav */
 
 .nav {
-	padding: 0 13.5rem;
+	min-width: 70vw;
 	align-items: center;
 	height: 4rem;
 }
@@ -220,14 +220,12 @@ p {
 #hero {
 	background-color: var(--bg-dark);	
 	color: var(--white);
-	padding: 0 13.5rem;
 	padding-bottom: 3rem;
 	flex-wrap: wrap;
 }
 
 .hero-div {
 	min-height: 13rem;
-	max-width: 27rem;
 	padding: 6rem 0;
 }
 
@@ -268,9 +266,7 @@ p {
 	height: 245px;
 	width: 100%;
 	background-color: gray;
-	justify-self: center;
-	align-self: center;
-
+	max-width: 526px;
 }
 
 /* Quote Section */
@@ -278,7 +274,7 @@ p {
 /* .quote () */
 
 .quote-section {
-	padding: 8rem 19rem;
+	padding: 8rem 0;
 	background-color: var(--bg-light);
 }
 
@@ -300,7 +296,7 @@ p {
 
 .blue-container {
 	background-color: var(--button);
-	padding: 3rem 8rem;
+	padding: 3rem 0;
 	gap: 5rem;
 	border-radius: 10px;
 	width: 70vw;
