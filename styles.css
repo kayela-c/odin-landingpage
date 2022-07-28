@@ -292,7 +292,9 @@ p {
 
 /* Quote Section */
 
-/* .quote () */
+.quote-div {
+	max-width: 70vw;
+}
 
 .quote-section {
 	padding: 8rem 0;
