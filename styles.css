@@ -8,6 +8,7 @@
 	--white: #f9faf8;
 	
 	font-family: 'Roboto', sans-serif;
+
 }
 /* Modern css reset https://piccalil.li/blog/a-modern-css-reset/ */
 
@@ -63,13 +64,6 @@ picture {
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
@@ -88,96 +82,97 @@ select {
 }
 
 
-/* My styling */
+/*  My Syles Start */
 
-.nav,
-.footer {
-		height: 4rem;
-		background-color: var(--bg-dark);
-		color: var(--white);
-		text-decoration: none;
+a {
+	text-decoration: none;
 }
 
-h2,
-p {
-	color: inherit;
+ul {
+	margin: 0;
+	padding: 0;
 }
-
-section {
-	height: 25vh;
-
-}
-
+/* utility classes */
 .flex {
 	display: flex;
 }
 
-#nav-links, 
-#nav-list,
-.nav
-{
-	list-style-type: none;
+.center {
+	justify-content: center;
+	align-items: center;
 }
 
-#nav-links {
-	flex: end;
+.between {
+	justify-content: space-between;
 }
 
-.link {
- padding-left: 1rem;
+.column {
+	flex-direction: column;
 }
 
-.logo {
-	font-size: 1.5rem !important;
+.section {
+	display: flex;
+	gap: 24px;
+	padding: 5rem 0;
+}
+
+.heading-1 {
+	font-size: 3rem;
+	font-weight: 900;
+   }
+.heading-2 {
+	padding-top: 3rem;
+	font-size: 2.25rem;
+	font-weight: 700;
+	color: var(--tx-dark);
+   }
+
+.heading-3 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--white);
+}
+
+.quote-txt {
+	font-size: 2.25rem;
+	font-weight: 200;
+	font-style: italic;
+	color: var(--tx-dark);
+}
+.quote-author {
+	justify-content: end;
+	font-size: 1.5rem;
 	font-weight: 700;
 }
 
-.footer {
-	text-align: center;
-	justify-content: center;
-}
-
-#hero {
-	background-color: var(--bg-dark);	
-	color: var(--white);
-	display: flex;
-	gap: 24px;
-	padding: 0rem 13.5rem;
-	padding-bottom: 10rem;
-	padding-top: 7rem;
-
-}
- .heading-1 {
-	 font-size: 3rem;
-	 font-weight: 900;
-	}
-	
 .secondary-txt {
-		font-size: 1.125rem;
-		font-weight: 300;
-		margin-bottom: .68rem;
-		text-align: justify;
- }
-
-
-
-.hero-div {
-	min-height: 13rem;
-	max-width: 27rem;
+	font-size: 1.125rem;
+	font-weight: 300;
+	margin-bottom: .68rem;
+	text-align: justify;
+	color: var(--white);
 }
 
-
-.img-div {
-	height: 13rem;
-	width: 30rem;
-	background-color: gray;
-	justify-self: center;
-	align-self: center;
-	margin: auto;
+.card {
+	display: flex;
+	flex-direction: column;
+	height: 270px;
+	width: 180px;
 }
 
-#quote {
-	background-color: var(--bg-light)
+.card-txt {
+	font-size: 1.125rem;
+	font-weight: 300;
+	padding: .68rem;
+	text-align: center;
+	color: var(--tx-dark);
+}
+
+.card-img {
+	border: 4px solid var(--button);
+	border-radius: 15px;
+	height: 100%;
+	width: 100%;
 }
 
 .button {
@@ -185,15 +180,133 @@ section {
 	color: var(--white);
 	border: none;	
 	border-radius: 8px;
-	padding: .6em 2rem;
+	padding: .6em 2.5rem;
 	font-weight: 500;
 	font-size: 1rem;
 }
-.button-p:hover {
+
+.outline {
+	border: 2px solid var(--white);
+}
+
+.button:hover {
 	background-color: rgba( 0, 0, 0, 0.2);
 	cursor: pointer;
 }
 
-.button-outline {
-		border: 2px solid var(--white);
+/* Specific Styling Classes*/
+
+
+/* Groups */
+
+.nav,
+.footer {
+		background-color: var(--bg-dark);
+		color: var(--white);
+		
 }
+
+#nav-links, 
+#nav-list,
+.nav
+{
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0;
+}
+
+
+h2,
+p {
+	color: inherit;
+}
+
+/* Nav */
+
+.nav {
+	padding: 0 13.5rem;
+	align-items: center;s
+	height: 5rem;
+}
+
+.logo {
+	font-size: 1.5rem;
+	font-weight: 900;
+	color: var(--white);
+}
+
+
+.link {
+ padding-left: 1rem;
+}
+
+
+#nav-links {
+	font-weight: 300;
+}
+
+.nav-link-div {
+	flex: end;
+}
+/* Hero Section */
+
+#hero {
+	background-color: var(--bg-dark);	
+	color: var(--white);
+	padding: 0 13.5rem;
+}
+
+.hero-div {
+	min-height: 13rem;
+	max-width: 27rem;
+}
+
+
+/* Info Section */
+
+
+.img-div {
+	height: 245px;
+	width: 100%;
+	background-color: gray;
+	justify-self: center;
+	align-self: center;
+
+}
+
+#info {
+	gap: 3rem;
+
+}
+
+/* Quote Section */
+
+#quote {
+	background-color: var(--bg-light);
+	height: 460px;
+}
+
+/* Call to Action Section */
+
+.blue-container {
+	background-color: var(--button);
+	padding: 3rem 5rem;
+	gap: 5rem;
+	border-radius: 10px;
+	width: 70vw;
+}
+/* Footer */
+
+.footer {
+	text-align: center;
+	justify-content: center;
+	height: 6rem;
+}
+
+
+
+
+
+
+
+
