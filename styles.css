@@ -151,15 +151,30 @@ ul {
 	font-size: 1rem;
 }
 
-.outline {
+.button-p:hover {
+	background-color: var(--bg-light);
+	color: var(--button);
+}
+
+/* @media (max-width: 1200px) {
+	.button {
+		
+	}
+} */
+
+.btn-outline {
 	border: 2px solid var(--white);
 }
 
-.button:hover {
+.btn-outline:hover {
 	background-color: rgba( 0, 0, 0, 0.2);
 	cursor: pointer;
 }
 
+.margin-x {
+	margin-left:  2rem;
+	margin-right: 2rem;
+}
 /* Specific Styling Classes*/
 
 
@@ -190,7 +205,6 @@ p {
 /* Nav */
 
 .nav {
-	min-width: 70vw;
 	align-items: center;
 	height: 4rem;
 }
@@ -201,34 +215,41 @@ p {
 	color: var(--white);
 }
 
-
-.link {
- padding-left: 1rem;
+.nav-list
+{
+	min-width: 70vw;
 }
-
+.nav-link-div {
+	justify-content: end;
+}
 
 .nav-links {
 	font-weight: 300;
 }
 
-.nav-link-div {
-	justify-content: end;
-}
 
+.link {
+ padding-left: 1rem;
+}
 /* Hero Section  */
 
 #hero {
 	background-color: var(--bg-dark);	
 	color: var(--white);
 	padding-bottom: 3rem;
-	flex-wrap: wrap;
 }
 
 .hero-div {
 	min-height: 13rem;
+	min-width: 70vw;
 	padding: 6rem 0;
+	flex-wrap: wrap;
 }
 
+.hero-txt {
+	max-width: 450px;
+	padding-bottom: 3rem;
+}
 
 /* Info Section */
 
@@ -302,6 +323,7 @@ p {
 	width: 70vw;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 /* Footer */
