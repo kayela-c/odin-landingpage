@@ -263,11 +263,12 @@ p {
 	width: 100%;
 	max-width: 526px;
 	justify-content: center;
-	background-image: url(/img/1.png);
-	object-fit: cover;
 }
 
-
+.img1 {
+	height: 100%;
+	width: auto;
+	}
 
 /* Info Section */
 
