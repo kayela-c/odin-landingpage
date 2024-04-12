@@ -1,18 +1,18 @@
     <!-- Nav -->
-    <!-- <nav class="nav flex center">
+    <nav class="nav flex center">
         <ul class="flex nav-list between">
           <div class="logo-div">
-            <a href="#" class="logo">Header Logo</a>
+            <!-- <a href="#" class="logo">Header Logo</a> -->
           </div>
           <div class="nav-link-div">
             <div class="flex nav-link">
-              <li><a href="#" class="link"></a>Home</li>
-              <li><a href="#" class="link"></a>About Us</li>
-              <li><a href="#" class="link"></a>Call Now</li>
+              <!-- <li><a href="#" class="link"></a>Home</li> -->
+              <!-- <li><a href="#" class="link"></a>About Us</li> -->
+              <!-- <li><a href="#" class="link"></a>Call Now</li> -->
             </div>
           </div>
         </ul>
-      </nav> -->
+      </nav>
   
       <!-- /Nav -->
       <!-- Hero Section -->
