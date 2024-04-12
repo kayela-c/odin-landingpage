@@ -48,7 +48,7 @@
         <div id="info" class="flex center margin-x">
           <div class="card">
             <div class="card-img">
-              <img src="./src/img/2.png" alt="Image of delivery box" />
+              <!-- <img src="./src/img/2.png" alt="Image of delivery box" /> -->
             </div>
             <p class="card-txt">
               this is some subtext under an illustration or image
@@ -56,7 +56,7 @@
           </div>
           <div class="card">
             <div class="card-img">
-              <img src="./src/img/3.png" alt="Image of delivery box" />
+              <!-- <img src="./src/img/3.png" alt="Image of delivery box" /> -->
             </div>
             <p class="card-txt">
               this is some subtext under an illustration or image
@@ -64,7 +64,7 @@
           </div>
           <div class="card">
             <div class="card-img">
-              <img src="./src/img/4.png" alt="Image of delivery box" />
+              <!-- <img src="./src/img/4.png" alt="Image of delivery box" /> -->
             </div>
             <p class="card-txt">
               this is some subtext under an illustration or image
@@ -72,7 +72,7 @@
           </div>
           <div class="card">
             <div class="card-img">
-              <img src="./src/img/5.png" alt="Image of delivery box" />
+              <!-- <img src="./src/img/5.png" alt="Image of delivery box" /> -->
             </div>
             <p class="card-txt">
               this is some subtext under an illustration or image
