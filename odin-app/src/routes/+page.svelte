@@ -48,7 +48,7 @@
         <div id="info" class="flex center margin-x">
           <div class="card">
             <div class="card-img">
-              <!-- <img src="./src/img/2.png" alt="Image of delivery box" /> -->
+              <!-- <img src="https://photos.app.goo.gl/rTfnP9E9TdLWYe3N6" alt="Image of delivery box" /> -->
             </div>
             <p class="card-txt">
               this is some subtext under an illustration or image
