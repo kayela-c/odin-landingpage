@@ -2,13 +2,13 @@
     <nav class="nav flex center">
         <ul class="flex nav-list between">
           <div class="logo-div">
-            <!-- <a href="#" class="logo">Header Logo</a> -->
+            <a href="#" class="logo">Header Logo</a>
           </div>
           <div class="nav-link-div">
             <div class="flex nav-link">
-              <!-- <li><a href="#" class="link"></a>Home</li> -->
-              <!-- <li><a href="#" class="link"></a>About Us</li> -->
-              <!-- <li><a href="#" class="link"></a>Call Now</li> -->
+              <li><a href="#" class="link"></a>Home</li>
+              <li><a href="#" class="link"></a>About Us</li>
+              <li><a href="#" class="link"></a>Call Now</li>
             </div>
           </div>
         </ul>
@@ -48,7 +48,7 @@
         <div id="info" class="flex center margin-x">
           <div class="card">
             <div class="card-img">
-              <!-- <img src="https://photos.app.goo.gl/rTfnP9E9TdLWYe3N6" alt="Image of delivery box" /> -->
+              <img src="./src/img/2.png" alt="Image of delivery box" />
             </div>
             <p class="card-txt">
               this is some subtext under an illustration or image
@@ -56,7 +56,7 @@
           </div>
           <div class="card">
             <div class="card-img">
-              <!-- <img src="./src/img/3.png" alt="Image of delivery box" /> -->
+              <img src="./src/img/3.png" alt="Image of delivery box" />
             </div>
             <p class="card-txt">
               this is some subtext under an illustration or image
@@ -64,7 +64,7 @@
           </div>
           <div class="card">
             <div class="card-img">
-              <!-- <img src="./src/img/4.png" alt="Image of delivery box" /> -->
+              <img src="./src/img/4.png" alt="Image of delivery box" />
             </div>
             <p class="card-txt">
               this is some subtext under an illustration or image
@@ -72,7 +72,7 @@
           </div>
           <div class="card">
             <div class="card-img">
-              <!-- <img src="./src/img/5.png" alt="Image of delivery box" /> -->
+              <img src="./src/img/5.png" alt="Image of delivery box" />
             </div>
             <p class="card-txt">
               this is some subtext under an illustration or image
@@ -116,9 +116,7 @@
       <footer class="footer flex center">
         <p>Copyright &copy; The Odin Project 2021</p>
       </footer>
-      <!-- /footer -->
-
-      
+      <!-- /footer --> 
 
 <style>
 /* My custom variables */
