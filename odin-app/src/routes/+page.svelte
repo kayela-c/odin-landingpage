@@ -29,11 +29,11 @@
             </div>
   
             <div class="img-div flex">
-              <img
+              <!-- <img
                 src="/img/1.svg"
                 alt="Delivery Driver on scooter"
                 class="img1"
-              />
+              /> -->
             </div>
           </div>
         </div>
