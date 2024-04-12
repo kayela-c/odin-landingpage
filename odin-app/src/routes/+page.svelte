@@ -25,7 +25,7 @@
                 This website has some subtext that goes here under the main title.
                 It's a smaller font and the color is lower contrast
               </p>
-              <button class="button button-p">Sign Up</button>
+              <button class="button button-p btn">Sign Up</button>
             </div>
   
             <div class="img-div flex">
@@ -106,7 +106,7 @@
             </p>
           </div>
           <div class="button-div margin-x">
-            <button class="button btn-outline">Sign Up</button>
+            <button class="button btn btn-outline">Sign Up</button>
           </div>
         </div>
       </section>
@@ -120,3 +120,283 @@
 
       
 
+<style>
+/* My custom variables */
+
+:root {
+	--bg-dark: #1f2937;
+	--bg-light: #e5e7eb;
+	--tx-dark: #1f2937;
+	--button: #3882f6;
+	--white: #f9faf8;
+	--secondary: #303f54;
+	
+	font-family: 'Roboto', sans-serif;
+
+}
+/*  My Syles Start */
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+/* utility classes */
+.flex {
+	display: flex;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.between {
+	justify-content: space-between;
+}
+
+.section {
+	display: flex;
+	gap: 4rem;
+	padding: 5rem 0;
+}
+
+.heading-1 {
+	font-size: 3rem;
+	font-weight: 900;
+   }
+.heading-2 {
+	padding: 3rem 0;
+	font-size: 2.25rem;
+	font-weight: 700;
+	color: var(--tx-dark);
+   }
+
+.heading-3 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--white);
+}
+
+.secondary-txt {
+	font-size: 1.125rem;
+	font-weight: 300;
+	margin-bottom: .68rem;
+	color: var(--white);
+}
+
+.button {
+	background-color: var(--button);
+	color: var(--white);
+	border: none;	
+	border-radius: 8px;
+	padding: .6em 2.5rem;
+	font-weight: 500;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.button::before {
+content: ''
+}
+
+.button-p:hover {
+
+	background-color: var(--bg-light);
+	color: var(--button);
+}
+
+/* @media (max-width: 1200px) {
+	.button {
+		
+	}
+} */
+
+.btn-outline {
+	border: 2px solid var(--white);
+}
+
+.btn-outline:hover {
+
+	background-color: rgba( 0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.margin-x {
+	margin-left:  2rem;
+	margin-right: 2rem;
+}
+/* Specific Styling Classes*/
+
+
+/* Groups */
+
+.nav,
+.footer {
+		background-color: var(--bg-dark);
+		color: var(--white);
+		
+}
+
+.nav-links, 
+.nav-list,
+.nav
+{
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0;
+}
+
+
+h2,
+p {
+	color: inherit;
+}
+
+/* Nav */
+
+.nav {
+	align-items: center;
+	height: 4rem;
+}
+
+.logo {
+	font-size: 1.5rem;
+	font-weight: 900;
+	color: var(--white);
+}
+
+.nav-list
+{
+	min-width: 70vw;
+}
+.nav-link-div {
+	justify-content: end;
+}
+
+.nav-links {
+	font-weight: 300;
+}
+
+
+.link {
+ padding-left: 1rem;
+}
+/* Hero Section  */
+
+#hero {
+	background-color: var(--bg-dark);	
+	color: var(--white);
+	padding-bottom: 3rem;
+}
+
+.hero-div {
+	min-height: 13rem;
+	min-width: 70vw;
+	padding: 6rem 0;
+	flex-wrap: wrap;
+}
+
+.hero-txt {
+	max-width: 450px;
+	padding-bottom: 3rem;
+}
+
+.img-div {
+	height: 245px;
+	width: 100%;
+	max-width: 526px;
+	justify-content: center;
+}
+
+.img1 {
+	height: 100%;
+	width: auto;
+	}
+
+/* Info Section */
+
+#info {
+	gap: 3rem;
+	flex-wrap: wrap;
+
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	height: 270px;
+	width: 180px;
+	margin-bottom: 5rem;
+}
+
+
+.card-txt {
+	font-size: 1.125rem;
+	font-weight: 300;
+	padding: .68rem;
+	text-align: center;
+	color: var(--tx-dark);
+}
+
+.card-img {
+	height: 100%;
+	width: 100%;
+}
+
+
+/* Quote Section */
+
+.quote-div {
+	max-width: 70vw;
+}
+
+.quote-section {
+	padding: 8rem 0;
+	background-color: var(--bg-light);
+}
+
+.quote-txt {
+	font-size: 2.25rem;
+	font-weight: 200;
+	font-style: italic;
+	color: var(--tx-dark);
+}
+.quote-author {
+	justify-content: end;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+/* Call to Action Section */
+
+.blue-container {
+	background-color: var(--button);
+	padding: 3rem 0;
+	gap: 5rem;
+	border-radius: 10px;
+	width: 70vw;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/* Footer */
+
+.footer {
+	text-align: center;
+	justify-content: center;
+	height: 6.2rem;
+}
+
+footer p {
+	font-size: 1.068rem;
+	font-weight: 300;
+}
+
+
+
+</style>
