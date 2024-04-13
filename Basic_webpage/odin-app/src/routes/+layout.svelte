@@ -9,8 +9,8 @@
 	import css from 'highlight.js/lib/languages/css';
 	import javascript from 'highlight.js/lib/languages/javascript';
 	import typescript from 'highlight.js/lib/languages/typescript';
-	import { AppBar } from '@skeletonlabs/skeleton';
-	import { AppShell } from '@skeletonlabs/skeleton';
+	import { AppBar, AppShell, Avatar } from '@skeletonlabs/skeleton';
+	
 
 	hljs.registerLanguage('xml', xml); // for HTML
 	hljs.registerLanguage('css', css);
@@ -25,21 +25,28 @@
 </script>
 
 
-<AppShell>
-	<svelte:fragment slot="header">Header
+<AppShell slotSidebarLeft=" w-52 bg-surface-500/10 p-4 ">
+	<svelte:fragment slot="header">
 		
 <AppBar>
 	<svelte:fragment slot="lead">(icon)</svelte:fragment>
-	(title)
-	<svelte:fragment slot="trail">(actions)</svelte:fragment>
+	<strong><a href="/" class="logo">Header Brand Name</a></strong>
+	<svelte:fragment slot="trail">
+		<Avatar initials="JD" width="w-10" background="bg-primary-500" />
+	</svelte:fragment>
 </AppBar>
 
 	</svelte:fragment>
 	<!-- (sidebarLeft) -->
+	<svelte:fragment slot="sidebarLeft">
+		
+	</svelte:fragment>
 	<!-- (sidebarRight) -->
 	<svelte:fragment slot="pageHeader">Page Header</svelte:fragment>
 	<!-- Router Slot -->
-	<slot />
+	<div class=" container p-10 mx-auto">
+		<slot />
+	</div>
 	<!-- ---- / ---- -->
 	<svelte:fragment slot="pageFooter">Page Footer</svelte:fragment>
 	<svelte:fragment slot="footer">Footer</svelte:fragment>
