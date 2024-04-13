@@ -6,14 +6,13 @@
           </div>
           <div class="nav-link-div">
             <div class="flex nav-link">
-              <!-- <li><a href="+page.svelte" class="link"></a>Home</li> -->
-              <!-- <li><a href="+page.svelte" class="link"></a>About Us</li> -->
-              <!-- <li><a href="+page.svelte" class="link"></a>Call Now</li> -->
+              <li><a href="/" class="link"></a>Home</li>
+              <li><a href="/" class="link"></a>About Us</li>
+              <li><a href="/" class="link"></a>Call Now</li>
             </div>
           </div>
         </ul>
       </nav>
-  
       <!-- /Nav -->
       <!-- Hero Section -->
       <section>
@@ -25,15 +24,15 @@
                 This website has some subtext that goes here under the main title.
                 It's a smaller font and the color is lower contrast
               </p>
-              <button class="btn btn-lg">Sign Up</button>
+              <button class="btn variant-filled">Sign Up</button>
             </div>
   
             <div class="img-div flex">
-              <!-- <img
+              <img
                 src="/img/1.svg"
                 alt="Delivery Driver on scooter"
-                class="img1"
-              /> -->
+                class=""
+              />
             </div>
           </div>
         </div>
@@ -41,42 +40,50 @@
       <!-- /Hero Section -->
       <!-- Info Section -->
       <section>
-        <div class="flex center margin-x">
+        <div class="flex center">
           <h2 class="h2">Some random information</h2>
         </div>
   
-        <div id="info" class="flex center margin-x">
-          <div class="card">
-            <div class="card-img">
+        <div id="info" class="flex center gap-8">
+          <div class="card p-4">
+            <div class="card-header">
               <img src="./src/img/2.png" alt />
             </div>
-            <p class="card-txt">
-              this is some subtext under an illustration or image
-            </p>
+            <div>
+              <p class="h3">
+                this is some subtext under an illustration or image
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <div class="card-img">
+          <div class="card p-4">
+            <div class="card-header">
               <img src="./src/img/3.png" alt />
             </div>
-            <p class="card-txt">
-              this is some subtext under an illustration or image
-            </p>
+            <div>
+              <p class="h3">
+                this is some subtext under an illustration or image
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <div class="card-img">
+          <div class="card p-4">
+            <div class="card-header">
               <img src="./src/img/4.png" alt/>
             </div>
-            <p class="card-txt">
-              this is some subtext under an illustration or image
-            </p>
+            <div>
+              <p class="h3">
+                this is some subtext under an illustration or image
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <div class="card-img">
+          <div class="card p-4">
+            <div class="card-header">
               <img src="./src/img/5.png" alt/>
             </div>
-            <p class="card-txt">
-              this is some subtext under an illustration or image
-            </p>
+            <div>
+              <p class="h3">
+                this is some subtext under an illustration or image
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -105,8 +112,8 @@
               Sign up for our product by clicking that button right over there!
             </p>
           </div>
-          <div class="button-div margin-x">
-            <button class="button btn btn-outline">Sign Up</button>
+          <div class="margin-x">
+            <button class="btn variant-ghost-primary">Sign Up</button>
           </div>
         </div>
       </section>
