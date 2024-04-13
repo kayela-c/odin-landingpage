@@ -3,8 +3,8 @@
 	import { initializeStores } from '@skeletonlabs/skeleton';
 	initializeStores();
 	import { getDrawerStore } from "@skeletonlabs/skeleton";
-
-const drawerStore = getDrawerStore();
+	const drawerStore = getDrawerStore();
+	
 
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
@@ -16,9 +16,11 @@ const drawerStore = getDrawerStore();
 	import typescript from 'highlight.js/lib/languages/typescript';
 
 	//import skeleton features
-	import { AppBar, AppShell, Avatar } from '@skeletonlabs/skeleton';
 	import Navigation from '$lib/component/Navigation.svelte';
+	import { AppBar, AppShell, Avatar } from '@skeletonlabs/skeleton';
 	import { Drawer } from '@skeletonlabs/skeleton';
+
+
 
 	function drawerOpen(): void {
 		drawerStore.open();
@@ -27,6 +29,9 @@ const drawerStore = getDrawerStore();
 	function drawerClose(): void {
 		drawerStore.close();
 	}
+
+
+
 	hljs.registerLanguage('xml', xml); // for HTML
 	hljs.registerLanguage('css', css);
 	hljs.registerLanguage('javascript', javascript);
@@ -70,13 +75,15 @@ const drawerStore = getDrawerStore();
 		<Navigation />
 	</svelte:fragment>
 	<!-- (sidebarRight) -->
-	<svelte:fragment slot="pageHeader">Page Header</svelte:fragment>
+	<svelte:fragment slot="pageHeader">
+	</svelte:fragment>
 	<!-- Router Slot -->
 	<div class=" container p-10 mx-auto">
 		<slot />
 	</div>
 	<!-- ---- / ---- -->
-	<svelte:fragment slot="pageFooter">Page Footer</svelte:fragment>
+	<svelte:fragment slot="pageFooter">
+	</svelte:fragment>
 	<svelte:fragment slot="footer">
 		<footer class="flex justify-center">
 			<p>Copyright &copy; The Odin Project 2021</p>
