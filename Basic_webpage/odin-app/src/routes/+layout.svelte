@@ -1,5 +1,10 @@
 <script lang="ts">
 	import '../app.postcss';
+	import { initializeStores } from '@skeletonlabs/skeleton';
+	initializeStores();
+	import { getDrawerStore } from "@skeletonlabs/skeleton";
+
+const drawerStore = getDrawerStore();
 
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
@@ -9,12 +14,19 @@
 	import css from 'highlight.js/lib/languages/css';
 	import javascript from 'highlight.js/lib/languages/javascript';
 	import typescript from 'highlight.js/lib/languages/typescript';
+
+	//import skeleton features
 	import { AppBar, AppShell, Avatar } from '@skeletonlabs/skeleton';
 	import Navigation from '$lib/component/Navigation.svelte';
-	import { Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
-	import type { DrawerSettings, DrawerStore } from '@skeletonlabs/skeleton';
-	
+	import { Drawer } from '@skeletonlabs/skeleton';
 
+	function drawerOpen(): void {
+		drawerStore.open();
+	}
+
+	function drawerClose(): void {
+		drawerStore.close();
+	}
 	hljs.registerLanguage('xml', xml); // for HTML
 	hljs.registerLanguage('css', css);
 	hljs.registerLanguage('javascript', javascript);
@@ -27,13 +39,16 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
+<Drawer>
+	<Navigation/>
+</Drawer>
 
 <AppShell slotSidebarLeft="w-0 md:w-52 bg-surface-500/10">
 	<svelte:fragment slot="header">
 		
 <AppBar>
 	<svelte:fragment slot="lead">
-		<button type="button" class="md:hidden btn btn-icon mr-4 variant-filled-secondary">
+		<button type="button" class="md:hidden btn btn-icon mr-4 variant-filled-secondary" on:click={drawerOpen}>
 			<span>
 				<svg viewBox="0 0 100 80" class="fill-token w-4 h-4">
 					<rect width="100" height="20"/>
