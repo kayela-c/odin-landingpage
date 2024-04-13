@@ -1,6 +1,6 @@
 <!-- Hero Section -->
-<section>
-	<div id="hero" class="section center">
+<section class=" flex gap-20 py-5">
+	<div id="hero" class="flex justify-center">
 	  <div class="hero-div flex between margin-x">
 		<div class="hero-txt">
 		  <h1 class="heading-1">This website is awesome</h1>
@@ -23,7 +23,7 @@
   </section>
   <!-- /Hero Section -->
   <!-- Info Section -->
-  <section>
+  <section class=" flex gap-20 py-5">
 	<div class="flex center margin-x">
 	  <h2 class="heading-2">Some random information</h2>
 	</div>
@@ -65,7 +65,7 @@
   </section>
   <!-- /Info Section -->
   <!-- Quote Section -->
-  <section class="quote-section flex center">
+  <section class=" flex gap-20 py-5">
 	<div class="quote-div">
 	  <div class="quote margin-x">
 		<blockquote class="quote-txt">
@@ -80,7 +80,7 @@
   <!-- /Quote Section -->
 
   <!-- Call to Action Section -->
-  <section id="cta" class="section center">
+  <section class=" flex gap-20 py-5">
 	<div class="blue-container flex">
 	  <div class="cta-container margin-x">
 		<h3 class="heading-3">Call to action! It's time!</h3>
