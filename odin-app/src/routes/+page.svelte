@@ -1,3 +1,8 @@
+<script>
+	import Appbar from "../components/Appbar.svelte";
+	import Header from "../components/Header.svelte";
+	import Footer from "../components/Footer.svelte";
+</script>
 <!-- Hero Section -->
 <section class=" flex gap-20 py-5">
 	<div id="hero" class="flex justify-center">
