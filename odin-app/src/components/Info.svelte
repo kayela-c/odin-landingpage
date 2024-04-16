@@ -1,6 +1,6 @@
 <!-- Info Section -->
 <section class=" flex gap-20 py-5">
-	<div class="flex center margin-x">
+	<div class="flex justify-center">
 	  <h2 class="heading-2">Some random information</h2>
 	</div>
 
