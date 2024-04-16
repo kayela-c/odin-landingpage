@@ -9,7 +9,7 @@
 		</p>
 	  </div>
 	  <div class="button-div margin-x">
-		<button class="button btn-outline">Sign Up</button>
+		<button class="btn btn-lg variant-ghost-tertiary">Sign Up</button>
 	  </div>
 	</div>
   </section>

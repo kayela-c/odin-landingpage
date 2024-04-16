@@ -1,21 +1,21 @@
 <!-- Hero Section -->
-<section class=" flex gap-20 py-5">
+<section class="flex gap-20 py-5">
 	<div id="hero" class="flex justify-center">
-	  <div class="hero-div flex between margin-x">
-		<div class="hero-txt">
-		  <h1 class="heading-1">This website is awesome</h1>
-		  <p class="secondary-txt">
+	  <div class=" flex justify-center mx-2 min-h-52">
+		<div class="p-4">
+		  <h1 class="h1 pb-4">This website is awesome</h1>
+		  <p class="pb-4">
 			This website has some subtext that goes here under the main title.
 			It's a smaller font and the color is lower contrast
 		  </p>
-		  <button class="button button-p">Sign Up</button>
+		  <button class="btn btn-lg variant-filled-tertiary">Sign Up</button>
 		</div>
 
-		<div class="img-div flex">
+		<div class=" flex justify-center max-h-80">
 		  <img
 			src="/img/1.svg"
 			alt="Delivery Driver on scooter"
-			class="img1"
+			class="my-8"
 		  />
 		</div>
 	  </div>
